@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  background-color: #3498DB;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+
+.section h1, h2 {
+  font-family: RobotoBold;
+}
+
+.section h1, h2, p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.section h1 {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.section p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.section p.strong {
+  font-family: RobotoBold;
+}
+
+.section .in-action {
+  margin-top: 100px;
+}
+
+.section a {
+  color: #F1C40F;
+  text-decoration: none;
+  border-bottom: 1px solid #F1C40F;
+}
+
+.section ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.section ul li {
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+.section ol {
+  text-align: left;
+  font-size: 16px;
+}
+
+.section ol li {
+  padding-bottom: 20px;
+}
+
+.section.getting-started .instructions {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.section.getting-started .demonstration {
+  position: relative;
+  padding-right: 50px;
+  float: right;
+  width: 50%;
+  max-width: 450px;
+}
+
+.section.getting-started .demonstration img {
+  margin-top: 10%;
+  max-width: 100%;
+}
+
+.section.getting-started a {
+}
+
+.section.introduction {
+  background-color: #3498DB;
+}
+
+.section.values {
+  background-color: #34495E;
+}
+
+.section.getting-started {
+  background-color: #27AE60;
+}
+
+.section.problems {
+  background-color: #F1C40F;
+  color: #111;
+  padding-bottom: 20px;
+}
+
+.section.problems ul {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section.problems ul li {
+  font-size: 19px;
+  opacity: 0.9;
+}
+
+.section.problems .links {
+  margin: 50px auto;
+}
+
+.section.problems a {
+  color: #3498DB;
+  text-decoration: none;
+  border-bottom: 1px solid #3498DB;
+}
+
+
+.arrow {
+  margin: 0px auto;
+  margin-top: 50px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #ECF0F1;
+  padding-bottom: 100px;
+}
+
+.clear {
+  clear: both;
+}
+
+.github-corner {
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  right: 0px;
+}

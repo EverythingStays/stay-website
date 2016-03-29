@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EverythingStays - Immutable &amp; Distributed NodeJS Modules With IPFS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="wrapper">
+  <div class="section introduction">
+    <h1>EverythingStays</h1>
+    <h2>Immutable &amp; Distributed NodeJS Modules With IPFS</h2>
+    <p>What if we could have immutable modules that<br/>are distributed and downloaded from everyone?</p>
+    <p>We can! We just have to add some processing<br/>on top of the excellent and stable NPM CLI</p>
+    <p class="in-action">Want to see it in action? <a href="#getting-started">Watch the demonstration</a><br/>Otherwise, continue scrolling!</p>
+    <div class="arrow"></div>
+  </div>
+  <div class="section values">
+    <h1>Values</h1>
+    <ul>
+      <li>Compatibility with existing modules and CLI's</li>
+      <li>Offline first approach</li>
+      <li>Peer-to-peer instead of peers-to-central-server</li>
+      <li>Immutable modules</li>
+      <li>No politics</li>
+      <li>Prefer prototypes in favor of endless "brainstorming" and bikeshedding sessions</li>
+    </ul>
+    <div class="arrow"></div>
+  </div>
+  <div class="section getting-started" id="getting-started">
+    <h1>Getting Started</h1>
+    <div class="instructions">
+      <ol>
+        <li>Have IPFS installed and running with<br/><code>ipfs daemon</code> (<a href="https://ipfs.io/docs/install" target="_blank">IPFS setup instructions</a>)</li>
+        <li><code>npm install -g stay-cli</code></li>
+        <li>Navigate to your module directory</li>
+        <li>Install the hooks with <code>stay install</code></li>
+        <li>Publish your module <code>npm publish</code></li>
+        <li>Save the outputted hash and include it in Git tag or elsewhere</li>
+        <li>In the modules where you want to use the module, install the hooks again with <code>stay install</code></li>
+        <li>Run <code>stay add module-name@hash</code> to save the dependency</li>
+        <li>Run <code>npm install</code> to install the dependency</li>
+        <li>Do not forget to run <code>npm install --save module-name@version</code> if you want your module to be compatible with existing NPM ecosystem</li>
+      </ol>
+    </div>
+    <div class="demonstration">
+      <img alt="Walkthrough of the steps on getting started" src="demonstration.gif"/>
+    </div>
+    <div class="clear"></div>
+    <p class="strong">Now you are using peer-to-peer distributed modules that<br/>can be installed from LAN &amp; offline, with a fallback to the<br/>existing NPM registry</p>
+    <p>Great work!</p>
+    <div class="arrow"></div>
+  </div>
+  <div class="section problems">
+    <h1>Problems left to solve</h1>
+    <p class="strong">We still have things to do, this is not done yet.</p>
+    <p>Main issue is about discovering new modules <a href="https://github.com/EverythingStays/EverythingStays/issues/4" target="_blank">[Issue on Github]</a></p>
+    <p>Other is about windows support for the hooks <a href="https://github.com/EverythingStays/stay-cli/issues/4" target="_blank">[Issue on Github]</a></p>
+    <p>And bunch of other things we have not thought about yet</p>
+
+    <p class="strong">Join us and help figure out what is left to do and what we can do</p>
+    <p class="strong">Together, we can improve the NodeJS/NPM ecosystem<br/>make it offline/local first and make it resilient to failure</p>
+
+    <div class="links">
+      <p class="strong">Community:</p>
+      <p class="strong"><a href="http://webchat.freenode.net/?randomnick=1&channels=%23everythingstays&uio=MTA9dHJ1ZSYxMT03Mg57">Chat with us (#everythingstays on Freenode)</a></p>
+      <p class="strong"><a href="https://github.com/EverythingStays/EverythingStays/issues">Discuss with us</a></p>
+      <p class="strong"><a href="https://github.com/everythingstays">Read our code</a></p>
+    </div>
+
+    <iframe src="http://ghbtns.com/github-btn.html?user=EverythingStays&amp;repo=EverythingStays&amp;type=watch&amp;count=true" allowtransparency="true" scrolling="0" frameborder="0" height="20" width="100"></iframe> <a href="https://twitter.com/share" class="twitter-share-button" data-text="Let's improve the #nodejs ecosystem and use immutable #npm packages!">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <p>/ EverythingStays</p>
+  </div>
+ </div>
+<a href="https://github.com/everythingstays" class="github-corner">
+  <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</body>
+</html>
