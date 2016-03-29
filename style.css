@@ -55,6 +55,10 @@ html, body {
   margin: 20px;
 }
 
+.section p .twitter-share-button {
+  vertical-align: middle;
+}
+
 .section p.strong {
   font-family: RobotoBold;
 }
