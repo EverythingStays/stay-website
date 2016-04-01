@@ -31,6 +31,9 @@
   </div>
   <div class="section getting-started" id="getting-started">
     <h1>Getting Started</h1>
+    <div class="demonstration">
+      <img alt="Walkthrough of the steps on getting started" src="demonstration.gif" id="demonstration-gif"/>
+    </div>
     <div class="instructions">
       <ol>
         <li>Have IPFS installed and running with<br/><code>ipfs daemon</code> (<a href="https://ipfs.io/docs/install" target="_blank">IPFS setup instructions</a>)</li>
@@ -41,11 +44,8 @@
         <li>Save the outputted hash and include it in Git tag or elsewhere</li>
         <li>Run <code>stay add module-name@hash</code> to save the dependency</li>
         <li>Run <code>stay install</code> to install the dependency</li>
-        <li>Do not forget to run <code>npm install --save module-name@version</code> if you want your module to be compatible with existing NPM ecosystem</li>
+        <li>Do not forget to run<br/><code>npm install --save module-name@version</code><br/>if you want your module to be compatible with existing NPM ecosystem</li>
       </ol>
-    </div>
-    <div class="demonstration">
-      <img alt="Walkthrough of the steps on getting started" src="demonstration.gif" id="demonstration-gif"/>
     </div>
     <div class="clear"></div>
     <p class="strong">Now you are using peer-to-peer distributed modules that<br/>can be installed from LAN &amp; offline, with a fallback to the<br/>existing NPM registry</p>
