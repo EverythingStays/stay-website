@@ -36,12 +36,11 @@
         <li>Have IPFS installed and running with<br/><code>ipfs daemon</code> (<a href="https://ipfs.io/docs/install" target="_blank">IPFS setup instructions</a>)</li>
         <li><code>npm install -g stay-cli</code></li>
         <li>Navigate to your module directory</li>
-        <li>Install the hooks with <code>stay install</code></li>
+        <li>Install the hooks with <code>stay init</code></li>
         <li>Publish your module <code>npm publish</code></li>
         <li>Save the outputted hash and include it in Git tag or elsewhere</li>
-        <li>In the modules where you want to use the module, install the hooks again with <code>stay install</code></li>
         <li>Run <code>stay add module-name@hash</code> to save the dependency</li>
-        <li>Run <code>npm install</code> to install the dependency</li>
+        <li>Run <code>stay install</code> to install the dependency</li>
         <li>Do not forget to run <code>npm install --save module-name@version</code> if you want your module to be compatible with existing NPM ecosystem</li>
       </ol>
     </div>
